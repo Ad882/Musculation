@@ -1,0 +1,439 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  color: whitesmoke;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgba(9,9,9,255);
+}
+
+*,
+:before,
+:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 153px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1920px;
+  min-width: 980px;
+  transition: top 0.3s;
+  -webkit-transition: 0.48s;
+  transition: 0.48s;
+  z-index: 100;
+}
+
+
+
+#introduction {
+  height: 1208px;
+  width: 100%;
+  background-image: url(Schwarzy.jpg);
+  background-repeat: no-repeat;
+}
+
+#transition{
+  width: 100%;
+  max-width: 1920px;
+  text-align: center;
+
+}
+
+#main_part {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1920px;
+  margin-bottom: 42px;
+}
+
+#transition_2{
+  width: 100%;
+  max-width: 1920px;
+  text-align: center;
+
+}
+
+#progress {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 70px;
+  width: 70px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px whitesmoke;
+  cursor: pointer;
+}
+
+#progress-value {
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: whitesmoke;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  color: rgba(9,9,9,255);
+}
+
+#footer{
+  display: flex;
+  justify-content: space-between;
+  color: rgba(9,9,9,255);
+  font-size: 18px;
+  font-weight: bolder;
+  background-color: whitesmoke;
+  height: 150px;
+  padding-top: 8px;
+  width: 100%;
+  max-width: 1920px;
+}
+
+
+/* header */
+
+.Top-left-logo {
+  flex: 0.5;
+  margin-right: 12px;
+}
+
+.Chad {
+  height: 153px;
+  border-width: 2px;
+  border-radius: 80px;
+}
+
+.summary {
+  flex: 3.5;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+}
+
+.summary-section {
+  flex: auto;
+  justify-content: space-between;
+}
+
+a:link{
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  color: whitesmoke;
+}
+
+a:visited{
+  color: whitesmoke;
+}
+
+.name-and-motto {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-shrink: 0;
+  text-size-adjust: auto;
+  margin-right: 12px;
+}
+
+
+.name-position {
+  position: relative;
+}
+
+.name {
+  font-size: 86px;
+  font-family: 'Tangerine', cursive;
+}
+
+.motto-position {
+  position: absolute;
+  bottom: 20px;
+}
+
+.motto {
+  color: rgb(199, 18, 18);
+  font-weight: bolder;
+  margin: 0;
+  font-size: 24px;
+  font-family: 'Cinzel Decorative', cursive;
+  text-size-adjust: auto;
+}
+
+
+
+#sources {
+  flex: 0.6;
+  flex-shrink: 0;
+  align-items: flex-start;
+  text-size-adjust: auto;
+}
+
+/* Intro */
+
+.introductionTxt {
+  width: 850px;
+  font-size: 34px;
+  margin-top: 155px;
+  padding-left: 24px;
+  backdrop-filter: blur(1.5px);
+  border-radius: 40px;
+}
+
+.second_part {
+  color: rgb(199, 18, 18);
+  font-weight: bolder;
+}
+
+
+
+
+/* Transition */
+
+.clip-text {
+  font-size: 12em;
+  font-weight: bold;
+  line-height: 2;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  height: 400px;
+  /* Color fallback */
+  color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.clip-text:before,
+.clip-text:after {
+  position: absolute;
+  content: '';
+}
+
+/* Background */
+.clip-text:before {
+  z-index: -2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: inherit;
+}
+
+/* Text Background (black zone) */
+.clip-text:after {
+  position: absolute;
+  z-index: -1;
+  top: .475em;
+  right: 1.625em;
+  bottom: .575em;
+  left: 1.625em;
+  background-color: rgba(9,9,9,255);
+}
+
+.clip-text_two {
+  background-image: url(Adam_V3.jpg);
+}
+
+
+/* Main */
+
+.side-section {
+  flex: 1;
+  overflow: hidden;
+  background-color: rgba(9,9,9,255);
+}
+
+.side_img{
+  width: 100%;
+}
+
+.middle-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(9,9,9,255);
+  padding: 8px;
+  flex: 4;
+  color: whitesmoke;
+}
+
+
+
+.pilars{
+  font-size: 128px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  font-family: 'Tangerine', cursive;
+}
+
+.metaphorus{
+  font-size: 28px;
+  font-family: 'Pinyon Script', cursive;
+}
+
+
+.end-link{
+  font-size: 59px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-align: left;
+}
+
+
+.workout{
+  display: flex;
+  flex-direction: column;
+}
+
+.redirection-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 8px;
+}
+
+.re-button{
+  position: relative;
+  padding: 10px 30px;
+  margin: 0 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-box-reflect: below 1px linear-gradiant(transparent, #0003);
+}
+
+.re-button:hover{
+  background: whitesmoke;
+  color: rgba(9,9,9,255);
+  font-weight: bolder;
+  box-shadow: 0 0 50px whitesmoke;
+  transition-delay: 0.5s;
+}
+
+.re-button:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid whitesmoke;
+  border-left: 2px solid whitesmoke;
+  transition: 0.5s;
+}
+
+.re-button:hover:before{
+  width: 100%;
+  height: 100%;
+}
+
+.re-button:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid whitesmoke;
+  border-right: 2px solid whitesmoke;
+  transition: 0.5s;
+}
+
+.re-button:hover:after{
+  width: 100%;
+  height: 100%;
+}
+
+/* Transition 2*/
+
+.clip-text-2 {
+  font-size: 12em;
+  font-weight: bold;
+  line-height: 2;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  height: 400px;
+  /* Color fallback */
+  color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.clip-text-2:before,
+.clip-text-2:after {
+  position: absolute;
+  content: '';
+}
+
+/* Background */
+.clip-text-2:before {
+  z-index: -2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: inherit;
+}
+
+/* Text Background (black zone) */
+.clip-text-2:after {
+  position: absolute;
+  z-index: -1;
+  top: .425em;
+  right: 1.250em;
+  bottom: .525em;
+  left: 1.250em;
+  background-color: whitesmoke;
+}
+
+.clip-text_three {
+  background-image: url(workout-wallpaper.jpg);
+}
+
+
+
+
+
+
+
+/* footer */ 
+
+.resources{
+  text-align: center;
+  flex: 1;
+}
+
+.contact{
+  text-align: center;
+  flex: 1;
+}
+
+.big-names{
+  text-align: center;
+  flex: 1;
+}
