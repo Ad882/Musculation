@@ -12,7 +12,7 @@ body {
   color: whitesmoke;
   font-family: 'Montserrat', sans-serif;
   background-color: rgba(9, 9, 9, 255);
-}
+} 
 
 *,
 :before,
@@ -21,6 +21,12 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+.global{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 #navbar {
   display: flex;
@@ -48,8 +54,8 @@ body {
 }
 
 #main_part {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
   width: 100%;
   max-width: 1920px;
   margin-bottom: 42px;
@@ -100,12 +106,39 @@ body {
   display: flex;
   flex-direction: row;
   flex-shrink: 0;
+  justify-content: space-between;
+  padding-right: 22px;
 }
 
 .summary-section {
+  position: relative;
   flex: auto;
-  justify-content: space-between;
 }
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 20px;
+  background-color: rgba(9,9,9,255);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(9,9,9,255);
+  z-index: 100;
+}
+
+.dropdown-content a {
+  color: rgba(9,9,9,255);
+  padding: 18px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: rgb(199, 18, 18);}
+
+.dropdown:hover .dropdown-content {display: block;}
 
 a:link {
   text-decoration: none;
@@ -180,9 +213,9 @@ a:visited {
 /* Transition */
 
 .clip-text {
-  font-size: 12em;
+  font-size: 12vw;
   font-weight: bold;
-  line-height: 2.8;
+  line-height: 575px;
   position: relative;
   display: inline-block;
   text-align: center;
@@ -214,11 +247,12 @@ a:visited {
 .clip-text:after {
   position: absolute;
   z-index: -1;
-  top: .625em;
-  right: 1.225em;
-  bottom: 0.925em;
-  left: 1.225em;
+  top: 150px;
+  right: 150px;
+  bottom: 150px;
+  left: 150px;
   background-color: rgba(9, 9, 9, 255);
+  opacity: 0.88;
 }
 
 .clip-text_two {
@@ -262,8 +296,18 @@ a:visited {
   color: whitesmoke;
 }
 
+
+.Chapter{
+  font-size: 128px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-align: left;
+  font-family: 'Tangerine', cursive;
+  margin-bottom: 0;
+}
+
 .Txt {
-  font-size: 24px;
+  font-size: 21px;
 }
 
 .front {
@@ -288,6 +332,31 @@ a:visited {
 
 #legs {
   color: rgba(255, 0, 0, 207);
+}
+
+ol.enum{
+  list-style-type: disc;
+}
+
+.morphology{
+  display: flex;
+  margin: 12px;
+  align-items: center;
+}
+
+.morphology-illustration{
+  height: 300px;
+}
+
+.morphology-Txt{
+  flex: 1;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+
+.morphology-illustration{
+  height: 250px;
 }
 
 #conclusion-text{
