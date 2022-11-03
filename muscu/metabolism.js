@@ -5,9 +5,9 @@ function getValue() {
     var g = document.getElementById("gender").value;
     
     if (g == 'Femme') {
-        var out = (0.963 * Math.pow(w, 0.48) * Math.pow(h, 0.5) * Math.pow(a, -0.13)) * (1000/4.1855);
+        var out = (0.963 * Math.pow(w, 0.48) * Math.pow(h, 0.5) * Math.pow(a, -0.13)) * (100/4.1855);
     } else {
-        var out = (1.083 * Math.pow(w, 0.48) * Math.pow(h, 0.5) * Math.pow(a, -0.13)) * (1000/4.1855);
+        var out = (1.083 * Math.pow(w, 0.48) * Math.pow(h, 0.5) * Math.pow(a, -0.13)) * (100/4.1855);
 
     }
 
