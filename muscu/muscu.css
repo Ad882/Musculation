@@ -72,7 +72,6 @@ body {
 #transition_2{
   width: 100%;
   max-width: 1920px;
-  height: 1080px;
 }
 
 #progress {
@@ -416,6 +415,8 @@ a:visited{
 
 #video_MHA{
   z-index: 500;
+  max-width: 1520px;
+  max-height: 855px;
   width: 100%;
   height: 100%;
 }
