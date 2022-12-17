@@ -86,7 +86,7 @@ body {
 
 
 
-/* header */
+/* header */ 
 
 .Top-left-logo {
   flex: 0.5;
@@ -246,9 +246,9 @@ a:visited {
   position: absolute;
   z-index: -1;
   top: 150px;
-  right: 75px;
+  right: 235px;
   bottom: 150px;
-  left: 75px;
+  left: 235px;
   background-color: rgba(9, 9, 9, 255);
   opacity: 0.88;
 }
