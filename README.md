@@ -1,9 +1,10 @@
-## Welcome to this directory dedicated to musculation!
+
+# **Welcome to this directory dedicated to bodybuilding**
 
 
 ![Screenshot](muscu/Schwarzy.jpg)
 
-# The purpose of this site is threefold :
+# The purpose of this site is threefold:
 - To have a good time coding.
 - To develop my skills in HTML, CSS and JavaScript.
 - To gather all my knowledge about bodybuilding in one site.
@@ -12,4 +13,5 @@
 Nothing else.
 
 # The website link: 
-    https://ad882.github.io/Musculation
+
+<https://ad882.github.io/Musculation> 
