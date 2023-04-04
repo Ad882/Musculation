@@ -1,4 +1,4 @@
-## __Welcome to this directory dedicated to musculation!__
+## Welcome to this directory dedicated to musculation!
 
 
 ![Screenshot](muscu/Schwarzy.jpg)
